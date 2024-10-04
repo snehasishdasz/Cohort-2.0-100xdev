@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-bottom: 1px solid #424242;
+    padding: 25px 170px;
+
+}
+.logo img{
+    width: 150px;
+}
+
+.menu-items a{
+    padding: 20px;
+    text-decoration: none;
+}
+.center{
+    text-align: center;
+    width: 100%;
+    /* height: 450px; */
+    /* background-color: rgb(247, 198, 198); */
+    margin-top: 70px;
+}
+
+.image img{
+    display: block;
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 51%;
+    max-height: 53vh;
+}
+.heading{
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin-top: 88px;
+}
+h1{
+    text-align: center;
+    font-size: 2.75rem;
+    line-height: 1.25;
+}
+h5{
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+button{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #387ed1;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 40px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    
+}
+
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .menu-items a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .image img {
+        width: 85%;
+        padding-top: 40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* For small mobile devices (below 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items a {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    .image img {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h5 {
+        font-size: 0.95rem;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
